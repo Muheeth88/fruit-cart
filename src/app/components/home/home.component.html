@@ -1,0 +1,10 @@
+<div class="page">
+    <div *ngFor="let fruit of fruitList" class="list">
+        <input type="checkbox" (change)="onFruitClick($event)" value={{fruit.id}}>
+        <div>{{fruit.fruitName}}</div>
+        <div>{{fruit.price}}</div>
+    </div>
+    <div class="list">
+        <button (click)="onSubmitClick()" class="list">Submit</button>
+    </div>
+</div>

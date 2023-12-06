@@ -1,0 +1,12 @@
+<div>
+    <div class="d-flex" *ngFor="let fruit of selectedFruitList">
+        <div>{{fruit.fruitName}}</div>
+        <div class="d-flex">Quantity <button (click)="onPlusClick(fruit)">+</button> <span>{{fruit.quantity}}</span><button (click)="onMinusClick(fruit)">-</button></div>
+        <div>{{fruit.price}}</div>
+        <div><button (click)="onDelete(fruit)">Delete</button></div>
+    </div>
+    <div class="d-flex">
+        <span>Total</span>
+        <span>{{total}}</span>
+    </div>
+</div>
